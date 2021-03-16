@@ -4,8 +4,6 @@ const router = express.Router();
 const SchoolModel = require("../models").Schools;
 
 
-
-
 // GET ALL SCHOOLS
 router.get("/", async (req, res) => {
     let schools = await SchoolModel.findAll();
