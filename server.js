@@ -6,7 +6,7 @@ app.use(express.json());
 //////MIDDLEWARE ENDS
 
 //app.use(cors());
-app.use(cors({"origin": "http://localhost:3000"}));
+app.use(cors({"origin": ["http://localhost:3000", "https://unit-4-project-frontend.herokuapp.com" ]}));
 
 //HOMEPAGE
 app.get('/', (req, res) => {
